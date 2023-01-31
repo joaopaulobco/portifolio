@@ -1,45 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Personal Portfólio Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <h1>joão oliveira</h1>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>web designer</p>
-                <h3>Hi, my name is <span>João Paulo</span><br>and this is my Portfólio.</h3>
-            </div>
+      <div class="container">
+        <nav>
+          <h1>joão oliveira</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>web designer</p>
+          <h3>
+            Hi, my name is <span>João Paulo</span><br />and this is my
+            Portfólio.
+          </h3>
         </div>
+      </div>
     </div>
     <!----------about-------->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./images/ISIMG-700340.JPG" alt="image">
-                </div>
-                <div class="about-col-2">
-                    <h3 class="sub-title">About me</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/Linkedin.jpeg" alt="image" />
+          </div>
+          <div class="about-col-2">
+            <h3 class="sub-title">About me</h3>
+            <p>
+              Sou formado e atuo na área de educação física, mas com a
+              insatisfação na área desde o ano passado, resolvi começar a
+              estudar web development. Comecei em janeiro estudando por conta
+              própria HTML, CSS e JavaScript, não demorou muito e me matriculei
+              no bootcamp part-time da IronHack onde consegui meu primeiro
+              certificado de 400 horas na área, estou atrás da minha primeira
+              oportunidade como desenvolvedor, sou muito proativo, tenho muita
+              vontade de continuar aprendendo e aprimorando minhas habilidades.
+            </p>
 
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab " id="skills">
+              <ul>
+                <li><span>JavaScript</span></li>
+                <li><span>ReactJS</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>NodeJS</span></li>
+                <li><span>MongoDB</span></li>
+                <li><span>Express</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <p>
+                Atualmente finalizei o Bootcamp de desenvolvimento Web
+                Fullstack na IronHack e estou focado em aprimorar minhas
+                habilidades e desenvolver projetos colocando em pratica o que
+                venho aprendendo no bootcamp e em outras plataformas de estudo.
+                Meus projetos podem ser encontrados no meu GitHub. Tenho 4 anos
+                de vivência na área da saúde, trabalhando como professor de
+                academia e personal trainer, adquirindo experiência com
+                atendimento e trabalho em equipe.<br> github:
+                <a href="https://github.com/joaopaulobco">Github</a><br> e-mail: joaopaulo.bco@gmail.com
+              </p>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Uniceub</span><br>Bacharel em Educação Física</li>
+                    <li><span>IronHack</span><br>Bootcamp de desenvolvimento Web Fullstack</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links")
+        let tabContents = document.getElementsByClassName("tab-contents")
+        function opentab(tabName){
+            for(tabLink of tabLinks) {
+                tabLink.classList.remove("active-link")
+            }
+            for(tabContent of tabContents) {
+                tabContent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabName).classList.add("active-tab")
+        }
+    </script>
+  </body>
 </html>
