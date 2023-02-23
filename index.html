@@ -1,203 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/ba14f1c31f.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Personal Portfólio Website</title>
-  </head>
 
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <h1>joão oliveira</h1>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-text">
-          <p>web designer</p>
-          <h3>
-            Hi, my name is <span>João Paulo</span><br />and this is my
-            Portfólio.
-          </h3>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/ba14f1c31f.js" crossorigin="anonymous"></script>
+  <title>Personal Portfólio Website</title>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1>joão oliveira</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>web designer</p>
+        <h3>
+          Hi, my name is <span>João Paulo</span><br />and this is my
+          Portfólio.
+        </h3>
       </div>
     </div>
-    <!----------about-------->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="./images/Linkedin.jpeg" alt="image" />
-          </div>
-          <div class="about-col-2">
-            <h3 class="sub-title">About me</h3>
-            <p>
-              Formado em Educação física e com 4 anos de experiência na área,
-              fiquei bem desanimado com o reconhecimento e a realidade da
-              carreira, no inicio de 2022 comecei a me interessar pela
-              tecnologia e comecei fazendo pequenos cursos de CSS e HTML, acabei
-              me apaixonando pela área e logo me inscrevi na IronHack, um
-              bootcamp intensivo FullStack com foco em JavaScript, HTML,CSS,
-              NodeJS, Express, MongoDB e ReactJS. Assim que concluí o bootcamp
-              em dezembro de 2022, continuo estudando e aprimorando minhas
-              habilidades e esperando uma oportunidade. Sou uma pessoa muito
-              aberta a críticas construtivas, não tenho preguiça de trabalhar e
-              adoro me sentir útil e ajudar em problemas complexos.
+  </div>
+  <!----------about-------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/Linkedin.jpeg" alt="image" />
+        </div>
+        <div class="about-col-2">
+          <h3 class="sub-title">About me</h3>
+          <p>
+            Formado em Educação física e com 4 anos de experiência na área,
+            fiquei bem desanimado com o reconhecimento e a realidade da
+            carreira, no inicio de 2022 comecei a me interessar pela
+            tecnologia e comecei fazendo pequenos cursos de CSS e HTML, acabei
+            me apaixonando pela área e logo me inscrevi na IronHack, um
+            bootcamp intensivo FullStack com foco em JavaScript, HTML,CSS,
+            NodeJS, Express, MongoDB e ReactJS. Assim que concluí o bootcamp
+            em dezembro de 2022, continuo estudando e aprimorando minhas
+            habilidades e esperando uma oportunidade. Sou uma pessoa muito
+            aberta a críticas construtivas, não tenho preguiça de trabalhar e
+            adoro me sentir útil e ajudar em problemas complexos.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
             </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>JavaScript</span></li>
-                <li><span>ReactJS</span></li>
-                <li><span>HTML</span></li>
-                <li><span>CSS</span></li>
-                <li><span>NodeJS</span></li>
-                <li><span>MongoDB</span></li>
-                <li><span>Express</span></li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <p>
-                Atualmente finalizei o Bootcamp de desenvolvimento Web Fullstack
-                na IronHack e estou focado em aprimorar minhas habilidades e
-                desenvolver projetos colocando em pratica o que venho aprendendo
-                no bootcamp e em outras plataformas de estudo. Meus projetos
-                podem ser encontrados no meu GitHub. Tenho 4 anos de vivência na
-                área da saúde, trabalhando como professor de academia e personal
-                trainer, adquirindo experiência com atendimento e trabalho em
-                equipe.<br />
-                Github: <a href="https://github.com/joaopaulobco">Github</a
-                ><br />
-                e-mail: joaopaulo.bco@gmail.com
-              </p>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>Uniceub</span><br />Bacharel em Educação Física</li>
-                <li>
-                  <span>IronHack</span><br />Bootcamp de desenvolvimento Web
-                  Fullstack
-                </li>
-              </ul>
-            </div>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>JavaScript</span></li>
+              <li><span>ReactJS</span></li>
+              <li><span>HTML</span></li>
+              <li><span>CSS</span></li>
+              <li><span>NodeJS</span></li>
+              <li><span>MongoDB</span></li>
+              <li><span>Express</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <p>
+              Atualmente finalizei o Bootcamp de desenvolvimento Web Fullstack
+              na IronHack e estou focado em aprimorar minhas habilidades e
+              desenvolver projetos colocando em pratica o que venho aprendendo
+              no bootcamp e em outras plataformas de estudo. Meus projetos
+              podem ser encontrados no meu GitHub. Tenho 4 anos de vivência na
+              área da saúde, trabalhando como professor de academia e personal
+              trainer, adquirindo experiência com atendimento e trabalho em
+              equipe.<br />
+              Github: <a href="https://github.com/joaopaulobco">Github</a><br />
+              e-mail: joaopaulo.bco@gmail.com
+            </p>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Uniceub</span><br />Bacharel em Educação Física</li>
+              <li>
+                <span>IronHack</span><br />Bootcamp de desenvolvimento Web
+                Fullstack
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Services-->
-    <div id="services">
-      <div class="container">
-        <h3 class="sub-title">My Services</h3>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Design</h3>
+  <!-- Services-->
+  <div id="services">
+    <div class="container">
+      <h3 class="sub-title">My Services</h3>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Design</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dumm
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h3>UI/UX Design</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dumm
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h3>App Design</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dumm
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------- portfolio --------------->
+
+  <div id="portfolio">
+    <div class="container">
+      <h3 class="sub-title">My Work</h3>
+      <div class="work-list">
+        <div class="work">
+          <img src="./images/work-1.jpeg" />
+          <div class="layer">
+            <h3>Social Media App</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dumm
             </p>
-            <a href="#">Learn more</a>
+            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
           </div>
-          <div>
-            <i class="fa-solid fa-crop-simple"></i>
-            <h3>UI/UX Design</h3>
+        </div>
+        <div class="work">
+          <img src="./images/work-3.jpeg" />
+          <div class="layer">
+            <h3>Social Media App</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dumm
             </p>
-            <a href="#">Learn more</a>
+            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
           </div>
-          <div>
-            <i class="fa-brands fa-app-store"></i>
-            <h3>App Design</h3>
+        </div>
+        <div class="work">
+          <img src="./images/work-2.jpeg" />
+          <div class="layer">
+            <h3>Online Shopp App</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dumm
             </p>
-            <a href="#">Learn more</a>
+            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
           </div>
         </div>
       </div>
+      <a href="" class="btn">See more</a>
     </div>
+  </div>
+  <!------- CONTACT------->
 
-    <!------------------- portfolio --------------->
-
-    <div id="portfolio">
-      <div class="container">
-        <h3 class="sub-title">My Work</h3>
-        <div class="work-list">
-          <div class="work">
-            <img src="./images/work-1.jpeg" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dumm
-              </p>
-              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h3 class="sub-title">Contact me</h3>
+          <p><i class="fa-solid fa-paper-plane"></i>joaopaulo.bco@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>(61)99105-3434</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
           </div>
-          <div class="work">
-            <img src="./images/work-3.jpeg" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dumm
-              </p>
-              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="./images/work-2.jpeg" />
-            <div class="layer">
-              <h3>Online Shopp App</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dumm
-              </p>
-              <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-          </div>
+          <a href="images/MyCV.pdf" download class="btn btn2">Download CV</a>
         </div>
-        <a href="" class="btn">See more</a>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
-
-    <script>
-      let tabLinks = document.getElementsByClassName("tab-links");
-      let tabContents = document.getElementsByClassName("tab-contents");
-      function opentab(tabName) {
-        for (tabLink of tabLinks) {
-          tabLink.classList.remove("active-link");
-        }
-        for (tabContent of tabContents) {
-          tabContent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabName).classList.add("active-tab");
+  </div>
+  <script>
+    let tabLinks = document.getElementsByClassName("tab-links");
+    let tabContents = document.getElementsByClassName("tab-contents");
+    function opentab(tabName) {
+      for (tabLink of tabLinks) {
+        tabLink.classList.remove("active-link");
       }
-    </script>
-  </body>
+      for (tabContent of tabContents) {
+        tabContent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-tab");
+    }
+  </script>
+</body>
 </html>
